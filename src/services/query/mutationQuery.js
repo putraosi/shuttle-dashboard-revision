@@ -8,6 +8,7 @@ mutation($email: String!, $password: String!) {
         lastName
         email
         lastLogin
+        role
       }
     }
   }

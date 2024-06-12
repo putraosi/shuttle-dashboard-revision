@@ -1,10 +1,28 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: 'class',
   theme: {
+    screens: {
+      '2xsm': '375px',
+      xsm: '425px',
+      '3xl': '2000px',
+      ...defaultTheme.screens,
+    },
+
     colors: {
       transparent: "transparent",
       modal: "rgba(0, 0, 0, 0.5)",
+      white:"#ffffff",
+      black: '#1C2434',
+      bodydark1: '#DEE4EE',
+      bodydark2: '#8A99AF',
+      graydark: '#333A48',
+      boxdark: '#24303F',
+      strokedark: '#2E3A47',
+      stroke: '#E2E8F0',
 
       neutral: {
         10: "#FFFFFF",
@@ -68,6 +86,11 @@ module.exports = {
         pressed: "#82090D",
         disabled: "#F9BDC0",
       },
+    },
+
+    dropShadow: {
+      1: '0px 1px 0px #E2E8F0',
+      2: '0px 1px 4px rgba(0, 0, 0, 0.12)',
     },
     extend: {},
   },

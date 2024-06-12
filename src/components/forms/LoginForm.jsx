@@ -31,8 +31,6 @@ const LoginForm = () => {
     }
   }, [login]);
 
-  console.log("cek login", login);
-
   const validation = () => {
     let error = {};
 

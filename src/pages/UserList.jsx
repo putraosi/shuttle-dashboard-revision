@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { DefaultLayout } from "../layout";
 
 const UserList = () => {
   return (
-    <div>UserList</div>
-  )
-}
+    <DefaultLayout>
+      <div>UserList</div>
+    </DefaultLayout>
+  );
+};
 
-export default UserList
+export default UserList;

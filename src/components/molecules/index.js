@@ -1,3 +1,6 @@
+import Header from "./Header";
 import Input from "./Input";
+import Sidebar from "./Sidebar";
 
-export { Input };
+export { Header, Input, Sidebar };
+
